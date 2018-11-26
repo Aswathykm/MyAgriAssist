@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aswathy.myagriassist.Payment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MAKE YOUR PAYMENT..."
+               android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"
+                android:gravity="center"/>
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/rgpay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:textStyle="bold"
+                   android:id="@+id/rbcod"
+                    android:layout_marginStart="100dp"
+                    android:text="CASH ON DELIVERY"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp" />
+                <RadioButton
+                    android:layout_marginTop="50dp"
+                     android:id="@+id/rbcd"
+                    android:layout_marginStart="100dp"
+                    android:text="DEBIT/CREDIT CARD"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="NEXT"
+            android:textSize="30dp"
+            android:id="@+id/tv_pay"
+            android:layout_marginLeft="50dp" />
+    </LinearLayout>
+
+</RelativeLayout>
